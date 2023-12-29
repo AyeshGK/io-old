@@ -295,8 +295,5 @@ const initialProjects = [
     },
 ]
 
-function getProjectBySlug(slug: string) {
-    return initialProjects.find(project => project.slug === slug);
-}
 
-export { categories, projectTypes, initialProjects, getProjectBySlug };
+export { categories, projectTypes, initialProjects };
