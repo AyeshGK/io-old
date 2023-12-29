@@ -4,7 +4,7 @@
 import { getProjectBySlug } from "@/external/project_data";
 import { assets } from "@/constant/assets";
 import { MotionProps, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 
 export default function ProjectPage({params}: {params: {project_name: string}}) {
@@ -14,10 +14,10 @@ export default function ProjectPage({params}: {params: {project_name: string}}) 
   if(!project) {
     return <div>Project not found</div>
   }
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
+  // const { ref, inView } = useInView({
+  //   threshold: 0.1,
+  //   triggerOnce: true,
+  // });
 
   
 
